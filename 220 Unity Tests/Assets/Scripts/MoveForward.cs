@@ -6,7 +6,7 @@ public class MoveForward : MonoBehaviour
 {
     private Rigidbody rb;
     public float speed = 10f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
