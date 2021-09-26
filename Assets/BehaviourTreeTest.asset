@@ -12,12 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
   m_Name: BehaviourTreeTest
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _serializedGraph: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_condition":{"valueA":{"_name":"isLocked","_targetVariableID":"00e277fd-1b0a-465b-b47c-b412105aa716"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_tag":"Check
+    Door","_position":{"x":438.9191,"y":259.9366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode"},{"_condition":{"valueA":{"_name":"needKey","_targetVariableID":"940b5f1f-543e-4658-b900-cfa46d2afbb0"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_tag":"Does
+    the door need a key?","_position":{"x":-56.0809,"y":413.9366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode"},{"_condition":{"valueA":{"_name":"needPuzzle","_targetVariableID":"0c5ee90d-ae16-4ce5-8e4b-65c471ae5571"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_tag":"Does
+    the door require a puzzle fulfilled?","_position":{"x":510.9191,"y":513.9366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode"},{"_tag":"Open
+    Door","_position":{"x":761.9191,"y":332.9366},"$type":"NodeCanvas.BehaviourTrees.ActionNode"},{"_tag":"Walk
+    Through Door","_position":{"x":1016.919,"y":372.9366},"$type":"NodeCanvas.BehaviourTrees.ActionNode"},{"_condition":{"valueA":{"_name":"hasKey","_targetVariableID":"a57af2a8-c93f-48df-aa77-fa95efff302e"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_tag":"Does
+    the player have the key?","_position":{"x":-181.0809,"y":567.9366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode"},{"_condition":{"valueA":{"_name":"isCompleted","_targetVariableID":"a5301f7d-0ba9-4a1e-85a9-e3a67253a4b8"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_tag":"Is
+    the puzzle completed?","_position":{"x":393.9191,"y":673.9366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode"},{"_action":{"boolVariable":{"_name":"isCompleted","_targetVariableID":"a5301f7d-0ba9-4a1e-85a9-e3a67253a4b8"},"$type":"NodeCanvas.Tasks.Actions.SetBoolean"},"_tag":"If
+    completed, set to true","_position":{"x":316.0,"y":825.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[],"canvasGroups":[{"name":"Puzzle
+    Unlock Path","rect":{"xMin":135.0,"yMin":450.0,"xMax":844.0,"yMax":905.0}},{"name":"Key
+    Unlock Path","rect":{"xMin":-313.0,"yMin":350.0,"xMax":95.0,"yMax":712.0}}],"localBlackboard":{"_variables":{"isCompleted":{"_name":"isCompleted","_id":"a5301f7d-0ba9-4a1e-85a9-e3a67253a4b8","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"isLocked":{"_name":"isLocked","_id":"00e277fd-1b0a-465b-b47c-b412105aa716","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"needKey":{"_name":"needKey","_id":"940b5f1f-543e-4658-b900-cfa46d2afbb0","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"needPuzzle":{"_name":"needPuzzle","_id":"0c5ee90d-ae16-4ce5-8e4b-65c471ae5571","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"hasKey":{"_name":"hasKey","_id":"a57af2a8-c93f-48df-aa77-fa95efff302e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _objectReferences: []
   _graphSource:
     _version: 3.2
     _category: 
     _comments: 
-    _translation: {x: 0, y: 0}
+    _translation: {x: 185, y: -101}
     _zoomFactor: 1
   _haltSerialization: 0

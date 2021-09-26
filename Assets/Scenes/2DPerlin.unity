@@ -153,10 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1587048787}
-  grid: []
   gridSize: 10
   cubeHeight: 3.4345696
-  perlinAdjust: 0.05
+  perlinAdjust: 0.2
   scale: 10
 --- !u!4 &65517232
 Transform:
