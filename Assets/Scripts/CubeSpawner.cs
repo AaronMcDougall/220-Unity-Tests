@@ -15,7 +15,7 @@ public class CubeSpawner : MonoBehaviour
     public float cubeHeight;
     public float perlinAdjust;
     public float scale;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,17 +27,16 @@ public class CubeSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
     }
 
     public void GenerateGrid()
     {
-        for (int i = 0; i < gridSize; i++)
+        for (int x = 0; x < gridSize; x++)
         {
             for (int y = 0; y < gridSize; y++)
             {
-                cubeHeight = Mathf.PerlinNoise(i * perlinAdjust, y * perlinAdjust) * scale;
-                GameObject copy = Instantiate(cube, new Vector3(i, cubeHeight, y), Quaternion.Euler(0, 0, 0));
+                cubeHeight = Mathf.PerlinNoise(x * perlinAdjust, y * perlinAdjust) * scale;
+                GameObject copy = Instantiate(cube, new Vector3(x, cubeHeight, y), Quaternion.Euler(0, 0, 0));
                 grid.Add(copy);
             }
         }
@@ -49,7 +48,7 @@ public class CubeSpawner : MonoBehaviour
         {
             GameObject.DestroyImmediate(cube, true);
         }
+
         grid.Clear();
     }
-
 }
