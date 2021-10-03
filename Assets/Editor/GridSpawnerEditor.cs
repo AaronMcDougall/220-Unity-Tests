@@ -1,12 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Codice.CM.SEIDInfo;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(TwoDCubeSpawner))]
-public class SpawnerEditor : Editor
+[CustomEditor(typeof(ThreeDGridSpawner))]
+public class GridSpawnerEditor : Editor
 {
     public override void OnInspectorGUI()
     {
@@ -14,12 +12,12 @@ public class SpawnerEditor : Editor
 
         if (GUILayout.Button("Respawn"))
         {
-            ((TwoDCubeSpawner)target)?.GenerateGrid();
+            ((ThreeDGridSpawner)target)?.GenerateGrid();
         }
 
         if (GUILayout.Button("Clear"))
         {
-            ((TwoDCubeSpawner)target)?.ClearGrid();
+            ((ThreeDGridSpawner)target)?.ClearGrid();
         }
     }
 }

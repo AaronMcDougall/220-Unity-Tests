@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class CubeSpawner : MonoBehaviour
+public class TwoDCubeSpawner : MonoBehaviour
 {
     public GameObject cube;
 
@@ -20,13 +20,8 @@ public class CubeSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GenerateGrid();
+        //GenerateGrid();
         new List<Grid>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void GenerateGrid()
